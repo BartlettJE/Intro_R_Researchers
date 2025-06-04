@@ -1,3 +1,5 @@
 # Workshop Overview {.unnumbered}
 
 Welcome to the workshop!
+
+You can view and follow the [introduction slides](docs/Introduction_slides.html){target="_blank"} here. 
