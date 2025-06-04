@@ -1,0 +1,7 @@
+# Code Review
+
+Key resource: 
+
+- Add link to code review chapter. 
+
+- Create a shared OneDrive for people to drop their files into 

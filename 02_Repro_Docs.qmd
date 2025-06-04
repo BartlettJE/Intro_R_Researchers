@@ -1,0 +1,5 @@
+# Writing Reproducible Documents 
+
+Key resource: 
+
+- https://psyteachr.github.io/quant-fun-v3/02-starting-with-data.html 

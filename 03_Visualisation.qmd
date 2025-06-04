@@ -1,0 +1,7 @@
+# Data Visualisation
+
+Key resource: 
+
+- https://psyteachr.github.io/quant-fun-v3/03-intro-data-viz.html
+
+- https://psyteachr.github.io/quant-fun-v3/07-more-visualisation.html

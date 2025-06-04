@@ -1,0 +1,5 @@
+# Introduction to R
+
+Key resource: 
+
+- https://psyteachr.github.io/quant-fun-v3/01-programming-basics.html 

@@ -1,0 +1,15 @@
+---
+title: "Introduction to R for Researchers"
+author: "James Bartlett, University of Glasgow  <br> ![](images/logos/logo.png){width=300} <br> @ York St John"
+format: 
+  revealjs:
+      embed-resources: true
+      logo: images/logos/logo.png
+      theme: simple
+output-dir: docs
+editor: visual
+---
+
+## Introduction 
+
+Hi, I'm James

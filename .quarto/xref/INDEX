@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "7d59c303"
+  },
+  "01_Intro_R.qmd": {
+    "01_Intro_R.html": "c7052ffa"
+  },
+  "webexercises.qmd": {
+    "webexercises.html": "9b77bcd6"
+  },
+  "references.qmd": {
+    "references.html": "271a7a6f"
+  },
+  "02_Repro_Docs.qmd": {
+    "02_Repro_Docs.html": "0fd7063f"
+  },
+  "03_Visualisation.qmd": {
+    "03_Visualisation.html": "e9dbb3c6"
+  },
+  "04_Wrangling.qmd": {
+    "04_Wrangling.html": "22caaf31"
+  },
+  "05_Codereview.qmd": {
+    "05_Codereview.html": "3733f1af"
+  },
+  "06_Resources.qmd": {
+    "06_Resources.html": "0bd28197"
+  }
+}
