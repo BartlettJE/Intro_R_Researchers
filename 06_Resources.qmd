@@ -1,13 +1,31 @@
 # Further Resources
 
-Key resource: 
+## PsyTeachR books
 
-- https://psyteachr.github.io/statsres-v2/
+You can see our whole suite of [PsyTeachR](https://psyteachr.github.io/){target="_blank"} resources online, but I will pick out the potentially most useful: 
 
-Key people: 
+- [Data Skills for Reproducible Research](https://psyteachr.github.io/reprores-v4/){target="_blank"}: Designed for our specialist MSc students and covers reproducible workflows, data visualisation, and more on iterations and specialist functions. 
 
-- Cedric Scherer
+- [Statistics and Research Design](https://psyteachr.github.io/statsres-v2/){target="_blank"}: Designed for our specialist MSc students and covers advanced statistical techniques such as general(ised) linear regression, bootstrapping, and Bayesian statistics. 
 
-- Crystal Lewis
+## Other R resources
 
-- Solomon Kurz
+Below are a series of other R resources you might find useful to demonstrate it's utility, from your own research, to how you might use it in your teaching practice. 
+
+- [Dissemination using Quarto and Github Pages](https://bartlettje.github.io/dissemination_quarto/){target="_blank"}: Once you get the hang of using Quarto, you can use it for different types of dissemination, such as creating websites, books, and presentations. For example, I wrote this book and the Fundamentals of Quantitative Analysis book all within R using Quarto. Combining it with github pages means you can share your work with others and help develop your profile. 
+
+- [R for Data Science](https://r4ds.hadley.nz/){target="_blank"}: This book covers data science by some of the leaders behind Posit and the tidyverse family of packages. You will learn about reproducible workflows, working with text data, and creating functions. 
+
+## Key people to follow
+
+There are a bunch of people on social media who are always sharing cool stuff using R for visualisation or analysis. If you want to see what else you can do with R, I recommend giving these people a follow in no particular order: 
+
+- [Nicola Rennie](https://bsky.app/profile/nrennie.bsky.social){target="_blank"} - Data visualisation specialist. 
+
+- [Cédric Scherer](https://bsky.app/profile/cedricscherer.com){target="_blank"} - Data visualisation specialist. 
+
+- [Crystal Lewis](https://bsky.app/profile/cghlewis.bsky.social){target="_blank"} - Research data management consultant and data wrangling. 
+
+- [Solomon Kurz](https://bsky.app/profile/solomonkurz.bsky.social){target="_blank"} - Advanced statistical techniques. 
+
+- [Mattan Ben-Shachar](https://bsky.app/profile/mattansb.bsky.social){target="_blank"} - Advanced statistical techniques.  

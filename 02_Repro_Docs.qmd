@@ -1,5 +1,24 @@
 # Writing Reproducible Documents 
 
-Key resource: 
+In this part, you will learn how to create reproducible documents using Quarto. This is going to be the main difference to the book as we still teach students how to use R Markdown as a dynamic document due to the assessments we give them, but Quarto is the newer format which is worth focusing on. There are very few differences between the two formats as they are based on the same idea of combining text via Markdown with code and output. Quarto is more flexible though and will be the one being more actively developed in future. 
 
-- https://psyteachr.github.io/quant-fun-v3/02-starting-with-data.html 
+Writing reproducible documents is one of the main benefits of using R for data analysis. You can produce an output by combining the wrangling, visualisation, and analysis process in one pipeline. This ensures you move from the raw data to the values you report in a manuscript without changing the raw data. You can still make mistakes but you make reproducible auditable mistakes. 
+
+For example, in a recent manuscript ([Stevenson et al., 2025](https://osotl.org/index.php/osotl/article/view/130){target="_blank"}), I wrote a reproducible method and results section which verifies all of the plots and values reported in the manscript, which you can see on the [Open Science Framework](https://osf.io/9znfa/){target="_blank"}. You can even write whole manuscripts in R using packages like [papaja](https://github.com/BartlettJE/papaja_demo){target="_blank"}. You will not reach this stage by the end of today's workshop but this is what you can work towards. 
+
+## Intended Learning Outcomes
+
+By the end of this part, you will be able to:
+
+- Understand and set your working directory, either manually or through creating an R project.
+
+- Create and render a Quarto file to create a reproducible document.
+
+- Use inline code to combine text and code output in your reproducible documents.
+
+- Identify and fix common errors in rendering Quarto files.
+
+## Key chapter
+
+- [Creating reproducible documents](https://psyteachr.github.io/quant-fun-v3/02-starting-with-data.html){target="_blank"}
+

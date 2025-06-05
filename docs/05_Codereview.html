@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Book Description">
+<meta name="description" content="Learning how to use R/RStudio for reproducible data analysis.">
 
-<title>Introduction to R for Researchers - 5&nbsp; Code Review</title>
+<title>5&nbsp; Code Review – Introduction to R for Researchers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -86,13 +106,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05_Codereview.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Code Review</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -105,47 +125,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Introduction to R for Researchers</a> 
-        <div class="sidebar-tools-main tools-wide">
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./Introduction-to-R-for-Researchers.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./Introduction-to-R-for-Researchers.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
-            Twitter
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
-            Facebook
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-              <i class="bi bi-bi-linkedin pe-1"></i>
-            LinkedIn
-            </a>
-          </li>
-      </ul>
-    </div>
+        <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -166,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01_Intro_R.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to R</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to R/RStudio</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -211,7 +191,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-4-rs" id="toc-the-4-rs" class="nav-link active" data-scroll-target="#the-4-rs"><span class="header-section-number">5.1</span> The 4 Rs</a>
+  <ul class="collapse">
+  <li><a href="#is-the-code-as-reported" id="toc-is-the-code-as-reported" class="nav-link" data-scroll-target="#is-the-code-as-reported"><span class="header-section-number">5.1.1</span> Is the code as reported?</a></li>
+  <li><a href="#does-the-code-run" id="toc-does-the-code-run" class="nav-link" data-scroll-target="#does-the-code-run"><span class="header-section-number">5.1.2</span> Does the code run?</a></li>
+  <li><a href="#is-the-code-reliable" id="toc-is-the-code-reliable" class="nav-link" data-scroll-target="#is-the-code-reliable"><span class="header-section-number">5.1.3</span> Is the code reliable</a></li>
+  <li><a href="#are-the-results-reproducible" id="toc-are-the-results-reproducible" class="nav-link" data-scroll-target="#are-the-results-reproducible"><span class="header-section-number">5.1.4</span> Are the results reproducible?</a></li>
+  </ul></li>
+  <li><a href="#code-review-across-the-workflow" id="toc-code-review-across-the-workflow" class="nav-link" data-scroll-target="#code-review-across-the-workflow"><span class="header-section-number">5.2</span> Code review across the workflow</a>
+  <ul class="collapse">
+  <li><a href="#project-organisation" id="toc-project-organisation" class="nav-link" data-scroll-target="#project-organisation"><span class="header-section-number">5.2.1</span> Project organisation</a></li>
+  <li><a href="#project-and-input-metadata" id="toc-project-and-input-metadata" class="nav-link" data-scroll-target="#project-and-input-metadata"><span class="header-section-number">5.2.2</span> Project and input metadata</a></li>
+  <li><a href="#code-readability" id="toc-code-readability" class="nav-link" data-scroll-target="#code-readability"><span class="header-section-number">5.2.3</span> Code readability</a></li>
+  <li><a href="#output-reproducibility" id="toc-output-reproducibility" class="nav-link" data-scroll-target="#output-reproducibility"><span class="header-section-number">5.2.4</span> Output reproducibility</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -235,13 +234,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>For the final section, I will introduction people to the concept of code review and establishing it as a practice early. Code review is extremely common in software engineering but rare in academia despite the rise in programming-based statistics software like R/RStudio.</p>
+<p>The aim of code review is to provide a formal or informal evaluation of someone else’s code to make sure it works and it is producing the intended output. I am organising the advice around <span class="citation" data-cites="ivimey-cook_implementing_2023">Ivimey-Cook et al. (<a href="references.html#ref-ivimey-cook_implementing_2023" role="doc-biblioref">2023</a>)</span> who wrote about code review in science and provide a check-list for you to refer to. It is not about code being perfect, but trying to identify points of weakness that could introduce errors into the scientific record.</p>
+<p>For the purposes of this task at the end of the day, you will package up and share your code from one of the sections with someone else in the workshop. You will complete a little checklist to discuss with your partner but keep in mind: this was likely new to most of you, so be kind and constructive!</p>
+<section id="the-4-rs" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="the-4-rs"><span class="header-section-number">5.1</span> The 4 Rs</h2>
+<p>Ivimey-Cook et al.&nbsp;present the 4 Rs behind code review. You might not be able to complete every step for the tasks we covered today, but it will be important for your future work.</p>
+<section id="is-the-code-as-reported" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="is-the-code-as-reported"><span class="header-section-number">5.1.1</span> Is the code as reported?</h3>
+<p>The methods and code must match. This means what someone describes in say the method and results section is actually what they apply. For example, if they reported a Pearson correlation but the code is actually for a Spearman correlation, this would be a mismatch between the methods and code. You were all following the same instructions, so you should be able to recognise if your partner applied the instructions accurately, but this will be more useful when it comes to your own papers and projects.</p>
+</section>
+<section id="does-the-code-run" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="does-the-code-run"><span class="header-section-number">5.1.2</span> Does the code run?</h3>
+<p>If you press run/render, does the code run? This is the simplest check as you do not need to know the intention of the code, just whether it runs or not.</p>
+<p>This step is achievable for everyone who completes code review. If the folder and file organisation is correct, you should be able to click run all or render, and the code should run in a new session.</p>
+<p>If it does not run, consider the following:</p>
+<ul>
+<li><p>Are the folders and files where they should be?</p></li>
+<li><p>Do you have the necessary packages installed?</p></li>
+<li><p>Are there typos in their code?</p></li>
+<li><p>Is the code in the wrong order, so it does not run from the start to the finish?</p></li>
+</ul>
+</section>
+<section id="is-the-code-reliable" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="is-the-code-reliable"><span class="header-section-number">5.1.3</span> Is the code reliable</h3>
+<p>Similar to step 1, the idea here is whether the code runs and completes as intended. The worst kind of errors are when code “runs”, but it does not produce the intended output. For example, you select the wrong column, introduce NAs, or use the wrong function. You are all following the same instructions here but it will be more applicable once it comes to working through the whole wrangling to analysis process in your own research.</p>
+</section>
+<section id="are-the-results-reproducible" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="are-the-results-reproducible"><span class="header-section-number">5.1.4</span> Are the results reproducible?</h3>
+<p>The final step is checking whether the results are reproducible. The idea is to check the output from the code matches what you write in a manuscript. For example, if your code produces a Pearson’s correlation with <em>r</em> = .35, but your manuscript reports <em>r</em> = .53, this would not be reproducible. This will not be possible for today’s tasks as we’re not reporting analyses, but the opportunity to include inline code to insert values from your analyses is one of the best features of R for reproducibility.</p>
+</section>
+</section>
+<section id="code-review-across-the-workflow" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="code-review-across-the-workflow"><span class="header-section-number">5.2</span> Code review across the workflow</h2>
+<p>Ivimey-Cook et al.&nbsp;also include suggestions for where in the project workflow code review can be useful.</p>
+<section id="project-organisation" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="project-organisation"><span class="header-section-number">5.2.1</span> Project organisation</h3>
+<p>Is the folder structure logical? Do you/they use clear folder and sub-folder structure?</p>
+<p>Are the raw data, code, and outputs separated? Do you/they store each component separately?</p>
+<p>Do the file and folder names complement the workflow? Are the names of the files and folder clear enough that you can understand what everything does days, weeks, or months down the line?</p>
+</section>
+<section id="project-and-input-metadata" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="project-and-input-metadata"><span class="header-section-number">5.2.2</span> Project and input metadata</h3>
+<p>Can someone understand the workflow and content of the data? If there are multiple scripts or files, is it clear which one you should open first to complete the coding steps in the correct order?</p>
+<p>Is a README provided to explains data contents and curation? This is not something we expect on this course, but a README is a separate file which explains what all the other files and folder do.</p>
+</section>
+<section id="code-readability" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="code-readability"><span class="header-section-number">5.2.3</span> Code readability</h3>
+<p>Is the code understandable? Using clear headings and sub-headings, adding intuitive code comments, use clear object names for what they represent.</p>
+<p>Does the code have a consistent style? When naming objects, using a clear and consistent naming convention like snake case (clean_data) or camel case (CleanData).</p>
+<p>Is external package use clearly documented? For example, checking they load all the packages in one place and there are not redundant packages which they do not use.</p>
+</section>
+<section id="output-reproducibility" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="output-reproducibility"><span class="header-section-number">5.2.4</span> Output reproducibility</h3>
+<p>Can the results be reproduced? Like step 4 in the 4 Rs, the idea is to check the output from the code matches what you write in the report.</p>
+<p>Is there a clear link between the code and output? As you read through the code, make sure it is clear what each part of the code does. For example, wrangling data and what exclusion criteria mean, and visualising data and what plot settings do.</p>
 <p>Key resource:</p>
 <ul>
-<li><p>Add link to code review chapter.</p></li>
+<li><p>https://debruine.github.io/talks/code-review/#/title-slide</p></li>
 <li><p>Create a shared OneDrive for people to drop their files into</p></li>
 </ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-ivimey-cook_implementing_2023" class="csl-entry" role="listitem">
+Ivimey-Cook, E. R., Pick, J. L., Bairos-Novak, K. R., Culina, A., Gould, E., Grainger, M., Marshall, B. M., Moreau, D., Paquet, M., Royauté, R., Sánchez-Tójar, A., Silva, I., &amp; Windecker, S. M. (2023). Implementing code review in the scientific workflow: <span>Insights</span> from ecology and evolutionary biology. <em>Journal of Evolutionary Biology</em>, <em>36</em>(10), 1347–1356. <a href="https://doi.org/10.1111/jeb.14230">https://doi.org/10.1111/jeb.14230</a>
+</div>
+</div>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -657,18 +718,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -700,7 +750,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -708,7 +780,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

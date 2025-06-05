@@ -1,9 +1,31 @@
 # Data Wrangling
 
-Key resource: 
+In this part, we will explore more packages and functions within the <pkg>tidyverse</pkg> family. There are several indispensible packages such as `tidyr`, `dplyr`, and `stringr` which cover the most common data wrangling tasks you will need in almost every project. Alongside data visualisation, the ability to wrangle data reproducibly is one of the best demonstrations of the value of R. Many of the tasks are either not possible in software like SPSS or very difficult to perform reproducibly. As you develop your R skills, the potential to complete the whole wrangling, visualisation, and analysis pipeline will really help your workflow. 
 
-- https://psyteachr.github.io/quant-fun-v3/04-wrangling-1.html
+## Intended Learning Outcomes
 
-- https://psyteachr.github.io/quant-fun-v3/05-wrangling-2.html
+By the end of this part, you will be able to:
 
-- https://psyteachr.github.io/quant-fun-v3/06-wrangling-3.html 
+- Join two data sets by matching one or more identifying columns in common.
+
+- Select a range and reorder variables in your data set.
+
+- Arrange values in numerical or alphabetical order.
+
+- Modify or create variables, such as recoding values or creating new groups.
+
+- Filter observations to retain a subset of your data.
+
+- Summarise your data to calculate summary statistics.
+
+- Restructure data into different formats, such as long and wide form.
+
+- String together multiple functions using pipes.
+
+## Key chapters
+
+- [Joining, select, and mutate](https://psyteachr.github.io/quant-fun-v3/04-wrangling-1.html){target="_blank"}
+
+- [Filter and summarise](https://psyteachr.github.io/quant-fun-v3/05-wrangling-2.html){target="_blank"}
+
+- [Pivots and pipes](https://psyteachr.github.io/quant-fun-v3/06-wrangling-3.html ){target="_blank"}

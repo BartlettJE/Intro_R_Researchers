@@ -1,5 +1,22 @@
-# Introduction to R
+# Introduction to R/RStudio
 
-Key resource: 
+In this part, we will explore R and RStudio as two complementary pieces of software. R is the statistical programming language and RStudio is an integrated development environment (IDE) to make it easier to use. If you followed the preparation instructions, you must install R first before RStudio, but you will likely never use R on its own. I will provide a little tour around RStudio and how to use basic functions like writing code, installing packages, and finding documentation.
 
-- https://psyteachr.github.io/quant-fun-v3/01-programming-basics.html 
+There are other IDEs out there that people prefer to use such as [VS Code](https://code.visualstudio.com/){target="_blank"}, but we will be using RStudio as the most common approach. Posit - the company who develop RStudio - are developing a new IDE called [Positron](https://positron.posit.co/){target="_blank"} which might supersede RStudio at some point, but it is in the early development stages; meaning it is still worth investing in learning how to use RStudio.
+
+## Intended Learning Outcomes
+
+By the end of this part, you will be able to:
+
+- Navigate and interact with RStudio.
+
+- Use an R function and find help documentation.
+
+- Install and load R packages.
+
+- Assign content to an object.
+
+## Key chapter
+
+- [Introduction to programming with R/RStudio](https://psyteachr.github.io/quant-fun-v3/01-programming-basics.html ){target="_blank"}
+

@@ -1,5 +1,28 @@
 # Workshop Overview {.unnumbered}
 
-Welcome to the workshop!
+Welcome to the workshop! You can view and follow the [introduction slides](Introduction_slides.html){target="_blank"} here. 
 
-You can view and follow the [introduction slides](docs/Introduction_slides.html){target="_blank"} here. 
+I designed this workshop to introduce you to working reproducibly using R/RStudio. It provides a rapid introduction to writing reproducible documents, visualise data, and wrangle data. This book collates all the workshop materials into one place and provides structure for the day. The main resource will be the [Fundamentals of Quantitative Analysis](https://psyteachr.github.io/quant-fun-v3/){target="_blank"} book which we use to teach MSc conversion students at the University of Glasgow. We designed this book to rapidly cover foundational wrangling, visualisation, and analysis skills, so it's the perfect resource for a one-day workshop. 
+
+This book provides the structure to the workshop, so you can easily follow along. Each chapter will outline the key intended learning outcomes and link to the relevant chapter you can follow during the live coding. We will be focusing on reproducible documents, data visualisation, and data wrangling as the most broadly applicable skills. I will then end on a further resources chapter for where you can learn about specific analysis techniques, R resources I like, and people on social media who post about useful R-related stuff. 
+
+After the workshop, you can see other resources on [my website](https://bartlettje.github.io/){target="_blank"}, [github](https://github.com/BartlettJE){target="_blank"}, or feel free to reach out on [BlueSky](https://bsky.app/profile/bartlettje.bsky.social){target="_blank"}.
+
+## Schedule
+
+We will follow the rough schedule for the day below. Some tasks might take less time but I prefer to account for a few questions / delays. 
+
+| Time        | Task                                       |
+|-------------|--------------------------------------------|
+| 11:00       | Introduction and introduction to R         |
+| 12:00       | File management and reproducible documents |
+| 13:00-13:30 | Lunch                                      |
+| 13:30-14:30 | Data visualisation                         |
+| 14:30-15:30 | Data wrangling                             |
+| 15:30-16:30 | Code review and wrap up                    |
+
+## Preparation before the workshop
+
+Before the workshop, please make sure you have downloaded R and R Studio to your computer. I created an [installing R guide](https://psyteachr.github.io/RSetGo/){target="_blank"} for our students, so you can follow the instructions depending whether you are using a PC or a Mac. 
+
+Some of the files you will create from scratch; while others I have prepared some templates for or provide data files. Please download the following files in preparation and I will instruct you where to save them during the workshop: [workshop files](). 

@@ -10,6 +10,15 @@ output-dir: docs
 editor: visual
 ---
 
-## Introduction 
+## Schedule {.smaller}
 
-Hi, I'm James
+| Time        | Task                                       |
+|-------------|--------------------------------------------|
+| 11:00       | Introduction and introduction to R         |
+| 12:00       | File management and reproducible documents |
+| 13:00-13:30 | Lunch                                      |
+| 13:30-14:30 | Data visualisation                         |
+| 14:30-15:30 | Data wrangling                             |
+| 15:30-16:30 | Code review and wrap up                    |
+
+## Introduction 

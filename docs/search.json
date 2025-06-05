@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Introduction to R for Researchers",
     "section": "",
-    "text": "Workshop Overview\nWelcome to the workshop!\nYou can view and follow the introduction slides here.",
+    "text": "Workshop Overview\nWelcome to the workshop! You can view and follow the introduction slides here.\nI designed this workshop to introduce you to working reproducibly using R/RStudio. It provides a rapid introduction to writing reproducible documents, visualise data, and wrangle data. This book collates all the workshop materials into one place and provides structure for the day. The main resource will be the Fundamentals of Quantitative Analysis book which we use to teach MSc conversion students at the University of Glasgow. We designed this book to rapidly cover foundational wrangling, visualisation, and analysis skills, so it’s the perfect resource for a one-day workshop.\nThis book provides the structure to the workshop, so you can easily follow along. Each chapter will outline the key intended learning outcomes and link to the relevant chapter you can follow during the live coding. We will be focusing on reproducible documents, data visualisation, and data wrangling as the most broadly applicable skills. I will then end on a further resources chapter for where you can learn about specific analysis techniques, R resources I like, and people on social media who post about useful R-related stuff.\nAfter the workshop, you can see other resources on my website, github, or feel free to reach out on BlueSky.",
     "crumbs": [
       "Workshop Overview"
     ]
@@ -12,11 +12,11 @@
   {
     "objectID": "01_Intro_R.html",
     "href": "01_Intro_R.html",
-    "title": "1  Introduction to R",
+    "title": "1  Introduction to R/RStudio",
     "section": "",
-    "text": "Key resource:\n\nhttps://psyteachr.github.io/quant-fun-v3/01-programming-basics.html",
+    "text": "1.1 Intended Learning Outcomes\nBy the end of this part, you will be able to:",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to R</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to R/RStudio</span>"
     ]
   },
   {
@@ -24,7 +24,7 @@
     "href": "02_Repro_Docs.html",
     "title": "2  Writing Reproducible Documents",
     "section": "",
-    "text": "Key resource:\n\nhttps://psyteachr.github.io/quant-fun-v3/02-starting-with-data.html",
+    "text": "2.1 Intended Learning Outcomes\nBy the end of this part, you will be able to:",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing Reproducible Documents</span>"
     ]
@@ -34,7 +34,7 @@
     "href": "03_Visualisation.html",
     "title": "3  Data Visualisation",
     "section": "",
-    "text": "Key resource:\n\nhttps://psyteachr.github.io/quant-fun-v3/03-intro-data-viz.html\nhttps://psyteachr.github.io/quant-fun-v3/07-more-visualisation.html",
+    "text": "3.1 Intended Learning Outcomes\nBy the end of this part, you will be able to:",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Visualisation</span>"
     ]
@@ -44,7 +44,7 @@
     "href": "04_Wrangling.html",
     "title": "4  Data Wrangling",
     "section": "",
-    "text": "Key resource:\n\nhttps://psyteachr.github.io/quant-fun-v3/04-wrangling-1.html\nhttps://psyteachr.github.io/quant-fun-v3/05-wrangling-2.html\nhttps://psyteachr.github.io/quant-fun-v3/06-wrangling-3.html",
+    "text": "4.1 Intended Learning Outcomes\nBy the end of this part, you will be able to:",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Wrangling</span>"
     ]
@@ -54,7 +54,7 @@
     "href": "05_Codereview.html",
     "title": "5  Code Review",
     "section": "",
-    "text": "Key resource:\n\nAdd link to code review chapter.\nCreate a shared OneDrive for people to drop their files into",
+    "text": "5.1 The 4 Rs\nIvimey-Cook et al. present the 4 Rs behind code review. You might not be able to complete every step for the tasks we covered today, but it will be important for your future work.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Code Review</span>"
     ]
@@ -64,9 +64,169 @@
     "href": "06_Resources.html",
     "title": "6  Further Resources",
     "section": "",
-    "text": "Key resource:\n\nhttps://psyteachr.github.io/statsres-v2/\n\nKey people:\n\nCedric Scherer\nCrystal Lewis\nSolomon Kurz",
+    "text": "6.1 PsyTeachR books\nYou can see our whole suite of PsyTeachR resources online, but I will pick out the potentially most useful:",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Further Resources</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Introduction to R for Researchers",
+    "section": "Schedule",
+    "text": "Schedule\nWe will follow the rough schedule for the day below. Some tasks might take less time but I prefer to account for a few questions / delays.\n\n\n\nTime\nTask\n\n\n\n\n11:00\nIntroduction and introduction to R\n\n\n12:00\nFile management and reproducible documents\n\n\n13:00-13:30\nLunch\n\n\n13:30-14:30\nData visualisation\n\n\n14:30-15:30\nData wrangling\n\n\n15:30-16:30\nCode review and wrap up",
+    "crumbs": [
+      "Workshop Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#preparation-before-the-workshop",
+    "href": "index.html#preparation-before-the-workshop",
+    "title": "Introduction to R for Researchers",
+    "section": "Preparation before the workshop",
+    "text": "Preparation before the workshop\nBefore the workshop, please make sure you have downloaded R and R Studio to your computer. I created an installing R guide for our students, so you can follow the instructions depending whether you are using a PC or a Mac.\nSome of the files you will create from scratch; while others I have prepared some templates for or provide data files. Please download the following files in preparation and I will instruct you where to save them during the workshop: workshop files.",
+    "crumbs": [
+      "Workshop Overview"
+    ]
+  },
+  {
+    "objectID": "01_Intro_R.html#intended-learning-outcomes",
+    "href": "01_Intro_R.html#intended-learning-outcomes",
+    "title": "1  Introduction to R/RStudio",
+    "section": "",
+    "text": "Navigate and interact with RStudio.\nUse an R function and find help documentation.\nInstall and load R packages.\nAssign content to an object.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to R/RStudio</span>"
+    ]
+  },
+  {
+    "objectID": "01_Intro_R.html#key-chapter",
+    "href": "01_Intro_R.html#key-chapter",
+    "title": "1  Introduction to R/RStudio",
+    "section": "1.2 Key chapter",
+    "text": "1.2 Key chapter\n\nIntroduction to programming with R/RStudio",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to R/RStudio</span>"
+    ]
+  },
+  {
+    "objectID": "05_Codereview.html#the-4-rs",
+    "href": "05_Codereview.html#the-4-rs",
+    "title": "5  Code Review",
+    "section": "",
+    "text": "5.1.1 Is the code as reported?\nThe methods and code must match. This means what someone describes in say the method and results section is actually what they apply. For example, if they reported a Pearson correlation but the code is actually for a Spearman correlation, this would be a mismatch between the methods and code. You were all following the same instructions, so you should be able to recognise if your partner applied the instructions accurately, but this will be more useful when it comes to your own papers and projects.\n\n\n5.1.2 Does the code run?\nIf you press run/render, does the code run? This is the simplest check as you do not need to know the intention of the code, just whether it runs or not.\nThis step is achievable for everyone who completes code review. If the folder and file organisation is correct, you should be able to click run all or render, and the code should run in a new session.\nIf it does not run, consider the following:\n\nAre the folders and files where they should be?\nDo you have the necessary packages installed?\nAre there typos in their code?\nIs the code in the wrong order, so it does not run from the start to the finish?\n\n\n\n5.1.3 Is the code reliable\nSimilar to step 1, the idea here is whether the code runs and completes as intended. The worst kind of errors are when code “runs”, but it does not produce the intended output. For example, you select the wrong column, introduce NAs, or use the wrong function. You are all following the same instructions here but it will be more applicable once it comes to working through the whole wrangling to analysis process in your own research.\n\n\n5.1.4 Are the results reproducible?\nThe final step is checking whether the results are reproducible. The idea is to check the output from the code matches what you write in a manuscript. For example, if your code produces a Pearson’s correlation with r = .35, but your manuscript reports r = .53, this would not be reproducible. This will not be possible for today’s tasks as we’re not reporting analyses, but the opportunity to include inline code to insert values from your analyses is one of the best features of R for reproducibility.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Code Review</span>"
+    ]
+  },
+  {
+    "objectID": "05_Codereview.html#code-review-across-the-workflow",
+    "href": "05_Codereview.html#code-review-across-the-workflow",
+    "title": "5  Code Review",
+    "section": "5.2 Code review across the workflow",
+    "text": "5.2 Code review across the workflow\nIvimey-Cook et al. also include suggestions for where in the project workflow code review can be useful.\n\n5.2.1 Project organisation\nIs the folder structure logical? Do you/they use clear folder and sub-folder structure?\nAre the raw data, code, and outputs separated? Do you/they store each component separately?\nDo the file and folder names complement the workflow? Are the names of the files and folder clear enough that you can understand what everything does days, weeks, or months down the line?\n\n\n5.2.2 Project and input metadata\nCan someone understand the workflow and content of the data? If there are multiple scripts or files, is it clear which one you should open first to complete the coding steps in the correct order?\nIs a README provided to explains data contents and curation? This is not something we expect on this course, but a README is a separate file which explains what all the other files and folder do.\n\n\n5.2.3 Code readability\nIs the code understandable? Using clear headings and sub-headings, adding intuitive code comments, use clear object names for what they represent.\nDoes the code have a consistent style? When naming objects, using a clear and consistent naming convention like snake case (clean_data) or camel case (CleanData).\nIs external package use clearly documented? For example, checking they load all the packages in one place and there are not redundant packages which they do not use.\n\n\n5.2.4 Output reproducibility\nCan the results be reproduced? Like step 4 in the 4 Rs, the idea is to check the output from the code matches what you write in the report.\nIs there a clear link between the code and output? As you read through the code, make sure it is clear what each part of the code does. For example, wrangling data and what exclusion criteria mean, and visualising data and what plot settings do.\nKey resource:\n\nhttps://debruine.github.io/talks/code-review/#/title-slide\nCreate a shared OneDrive for people to drop their files into\n\n\n\n\n\nIvimey-Cook, E. R., Pick, J. L., Bairos-Novak, K. R., Culina, A., Gould, E., Grainger, M., Marshall, B. M., Moreau, D., Paquet, M., Royauté, R., Sánchez-Tójar, A., Silva, I., & Windecker, S. M. (2023). Implementing code review in the scientific workflow: Insights from ecology and evolutionary biology. Journal of Evolutionary Biology, 36(10), 1347–1356. https://doi.org/10.1111/jeb.14230",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Code Review</span>"
+    ]
+  },
+  {
+    "objectID": "02_Repro_Docs.html#intended-learning-outcomes",
+    "href": "02_Repro_Docs.html#intended-learning-outcomes",
+    "title": "2  Writing Reproducible Documents",
+    "section": "",
+    "text": "Understand and set your working directory, either manually or through creating an R project.\nCreate and render a Quarto file to create a reproducible document.\nUse inline code to combine text and code output in your reproducible documents.\nIdentify and fix common errors in rendering Quarto files.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing Reproducible Documents</span>"
+    ]
+  },
+  {
+    "objectID": "02_Repro_Docs.html#key-chapter",
+    "href": "02_Repro_Docs.html#key-chapter",
+    "title": "2  Writing Reproducible Documents",
+    "section": "2.2 Key chapter",
+    "text": "2.2 Key chapter\n\nCreating reproducible documents",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Writing Reproducible Documents</span>"
+    ]
+  },
+  {
+    "objectID": "03_Visualisation.html#intended-learning-outcomes",
+    "href": "03_Visualisation.html#intended-learning-outcomes",
+    "title": "3  Data Visualisation",
+    "section": "",
+    "text": "Read data files into R/RStudio.\nUnderstand the ggplot2 layering system of creating plots.\nCreate and edit histograms to visualise the frequency of observations collated into bins.\nCreate and edit barplots to visualise the frequency of different categories.\nCreate and edit a scatterplot to visualise the relationship between two continuous variables.\nCreate and edit a violin-boxplot to visualise the density of data points in a continuous outcome.\nSave plots as an image to use in reports or presentations.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Visualisation</span>"
+    ]
+  },
+  {
+    "objectID": "03_Visualisation.html#key-chapters",
+    "href": "03_Visualisation.html#key-chapters",
+    "title": "3  Data Visualisation",
+    "section": "3.2 Key chapters",
+    "text": "3.2 Key chapters\n\nIntroduction to data visualisation\nScatterplots, boxplots, and violin-boxplots",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Data Visualisation</span>"
+    ]
+  },
+  {
+    "objectID": "04_Wrangling.html#intended-learning-outcomes",
+    "href": "04_Wrangling.html#intended-learning-outcomes",
+    "title": "4  Data Wrangling",
+    "section": "",
+    "text": "Join two data sets by matching one or more identifying columns in common.\nSelect a range and reorder variables in your data set.\nArrange values in numerical or alphabetical order.\nModify or create variables, such as recoding values or creating new groups.\nFilter observations to retain a subset of your data.\nSummarise your data to calculate summary statistics.\nRestructure data into different formats, such as long and wide form.\nString together multiple functions using pipes.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Wrangling</span>"
+    ]
+  },
+  {
+    "objectID": "04_Wrangling.html#key-chapters",
+    "href": "04_Wrangling.html#key-chapters",
+    "title": "4  Data Wrangling",
+    "section": "4.2 Key chapters",
+    "text": "4.2 Key chapters\n\nJoining, select, and mutate\nFilter and summarise\nPivots and pipes",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Wrangling</span>"
+    ]
+  },
+  {
+    "objectID": "06_Resources.html#other-r-resources",
+    "href": "06_Resources.html#other-r-resources",
+    "title": "6  Further Resources",
+    "section": "6.2 Other R resources",
+    "text": "6.2 Other R resources\nBelow are a series of other R resources you might find useful to demonstrate it’s utility, from your own research, to how you might use it in your teaching practice.\n\nDissemination using Quarto and Github Pages: Once you get the hang of using Quarto, you can use it for different types of dissemination, such as creating websites, books, and presentations. For example, I wrote this book and the Fundamentals of Quantitative Analysis book all within R using Quarto. Combining it with github pages means you can share your work with others and help develop your profile.\nR for Data Science: This book covers data science by some of the leaders behind Posit and the tidyverse family of packages. You will learn about reproducible workflows, working with text data, and creating functions.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Further Resources</span>"
+    ]
+  },
+  {
+    "objectID": "06_Resources.html#key-people-to-follow",
+    "href": "06_Resources.html#key-people-to-follow",
+    "title": "6  Further Resources",
+    "section": "6.3 Key people to follow",
+    "text": "6.3 Key people to follow\nThere are a bunch of people on social media who are always sharing cool stuff using R for visualisation or analysis. If you want to see what else you can do with R, I recommend giving these people a follow in no particular order:\n\nNicola Rennie - Data visualisation specialist.\nCédric Scherer - Data visualisation specialist.\nCrystal Lewis - Research data management consultant and data wrangling.\nSolomon Kurz - Advanced statistical techniques.\nMattan Ben-Shachar - Advanced statistical techniques.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Further Resources</span>"
+    ]
+  },
+  {
+    "objectID": "06_Resources.html#psyteachr-books",
+    "href": "06_Resources.html#psyteachr-books",
+    "title": "6  Further Resources",
+    "section": "",
+    "text": "Data Skills for Reproducible Research: Designed for our specialist MSc students and covers reproducible workflows, data visualisation, and more on iterations and specialist functions.\nStatistics and Research Design: Designed for our specialist MSc students and covers advanced statistical techniques such as general(ised) linear regression, bootstrapping, and Bayesian statistics.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Further Resources</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Ivimey-Cook, E. R., Pick, J. L., Bairos-Novak, K. R., Culina, A., Gould,\nE., Grainger, M., Marshall, B. M., Moreau, D., Paquet, M., Royauté, R.,\nSánchez-Tójar, A., Silva, I., & Windecker, S. M. (2023).\nImplementing code review in the scientific workflow:\nInsights from ecology and evolutionary biology. Journal\nof Evolutionary Biology, 36(10), 1347–1356. https://doi.org/10.1111/jeb.14230",
+    "crumbs": [
+      "References"
     ]
   }
 ]

@@ -1,7 +1,30 @@
 # Data Visualisation
 
-Key resource: 
+In this part, you will learn about `ggplot2` as one of the most common packages for data visualisation within R. This was my entry point into R as during my PhD I wanted to customise plots that were simply not possible in SPSS. `ggplot2` is part of the <pkg>tidyverse</pkg> family which is a collection of packages for wrangling, visualising, and analysing data. Each task is possible using functions built into R or other packages but the <pkg>tidyverse</pkg> works together like a little ecosystem and I like the function names as verbs to make your code very readable. 
 
-- https://psyteachr.github.io/quant-fun-v3/03-intro-data-viz.html
+`ggplot2` works through a layering system, meaning you build plots by adding and customising each component. This provides great flexibility to produce publication-quality plots that you can insert into manuscripts and presentations. We will work through different plot types such as histograms, scatterplots, and violin-boxplots to demonstrate key functionality. You will then have the skills and awareness to look into the components you need for your own research. 
 
-- https://psyteachr.github.io/quant-fun-v3/07-more-visualisation.html
+## Intended Learning Outcomes
+
+By the end of this part, you will be able to:
+
+- Read data files into R/RStudio.
+
+- Understand the `ggplot2` layering system of creating plots.
+
+- Create and edit histograms to visualise the frequency of observations collated into bins.
+
+- Create and edit barplots to visualise the frequency of different categories.
+
+- Create and edit a scatterplot to visualise the relationship between two continuous variables.
+
+- Create and edit a violin-boxplot to visualise the density of data points in a continuous outcome.
+
+- Save plots as an image to use in reports or presentations.
+
+## Key chapters
+
+- [Introduction to data visualisation](https://psyteachr.github.io/quant-fun-v3/03-intro-data-viz.html){target="_blank"}
+
+- [Scatterplots, boxplots, and violin-boxplots](https://psyteachr.github.io/quant-fun-v3/07-more-visualisation.html){target="_blank"}
+
