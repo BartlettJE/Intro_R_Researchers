@@ -10,7 +10,31 @@ output-dir: docs
 editor: visual
 ---
 
-## Schedule {.smaller}
+## Preparation steps
+
+-   R and RStudio downloaded to your laptop? ✔️
+
+\newline
+
+-   Workshop and Quant Fundamentals books open? ✔️
+
+\newline
+
+-   Workshop files downloaded? ✔️
+
+## Intended learning outcomes
+
+By the end of the workshop, you will be able to: 
+
+1. Write reproducible reports using R Markdown / Quarto.
+
+2. Clean and wrangle data into appropriate forms for visualisation and analysis.
+
+3. Use the `ggplot2` package for creating a range of plots.
+
+4. Share/receive code to conduct a brief code review.
+
+## Rough schedule {.smaller}
 
 | Time        | Task                                       |
 |-------------|--------------------------------------------|
@@ -21,4 +45,22 @@ editor: visual
 | 14:30-15:30 | Data wrangling                             |
 | 15:30-16:30 | Code review and wrap up                    |
 
-## Introduction 
+## Why R? 
+
+**Perfect for researchers**
+
+- Well-integrated tool popular in psychology researchers.
+
+- Ecosystem of well-maintained packages (e.g., *tidyverse*).
+
+**Perfect for educators**
+
+- Reinforce *reproducible teaching* ([Dogucu & Çetinkaya-Rundel, 2022](https://doi.org/10.1080/26939169.2022.2138645)) through using Quarto to create teaching materials.
+
+## R workflow
+
+```{r}
+knitr::include_graphics("images/R-data-science.png")
+```
+
+Image: [Wickham et al. (2023)](https://r4ds.hadley.nz/)
