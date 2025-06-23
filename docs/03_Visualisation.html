@@ -177,6 +177,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#intended-learning-outcomes" id="toc-intended-learning-outcomes" class="nav-link active" data-scroll-target="#intended-learning-outcomes"><span class="header-section-number">3.1</span> Intended Learning Outcomes</a></li>
   <li><a href="#key-chapters" id="toc-key-chapters" class="nav-link" data-scroll-target="#key-chapters"><span class="header-section-number">3.2</span> Key chapters</a></li>
+  <li><a href="#target-dataset" id="toc-target-dataset" class="nav-link" data-scroll-target="#target-dataset"><span class="header-section-number">3.3</span> Target Dataset</a></li>
   </ul>
 </nav>
     </div>
@@ -223,6 +224,67 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="https://psyteachr.github.io/quant-fun-v3/03-intro-data-viz.html" target="_blank">Introduction to data visualisation</a></p></li>
 <li><p><a href="https://psyteachr.github.io/quant-fun-v3/07-more-visualisation.html" target="_blank">Scatterplots, boxplots, and violin-boxplots</a></p></li>
 </ul>
+</section>
+<section id="target-dataset" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="target-dataset"><span class="header-section-number">3.3</span> Target Dataset</h2>
+<p>For most of this chapter, we are using open data from Lopez et al.&nbsp;<a href="https://psycnet.apa.org/doiLanding?doi=10.1037%2Fxge0001503" target="_blank">(2023)</a>. The abstract of their article is:</p>
+<blockquote class="blockquote">
+<p>Imagine a bowl of soup that never emptied, no matter how many spoonfuls you ate—when and how would you know to stop eating? Satiation can play a role in regulating eating behavior, but research suggests visual cues may be just as important. In a seminal study by Wansink et al.&nbsp;(2005), researchers used self-refilling bowls to assess how visual cues of portion size would influence intake. The study found that participants who unknowingly ate from self-refilling bowls ate more soup than did participants eating from normal (not self-refilling) bowls. Despite consuming 73% more soup, however, participants in the self-refilling condition did not believe they had consumed more soup, nor did they perceive themselves as more satiated than did participants eating from normal bowls. Given recent concerns regarding the validity of research from the Wansink lab, we conducted a preregistered direct replication study of Wansink et al.&nbsp;(2005) with a more highly powered sample (N = 464 vs.&nbsp;54 in the original study). We found that most results replicated, albeit with half the effect size (d = 0.45 instead of 0.84), with participants in the self-refilling bowl condition eating significantly more soup than those in the control condition. Like the original study, participants in the selfrefilling condition did not believe they had consumed any more soup than participants in the control condition. These results suggest that eating can be strongly controlled by visual cues, which can even override satiation.</p>
+</blockquote>
+<p>In summary, they replicated an (in)famous experiment that won the Ig-Nobel prize. Participants engaged in a intricate setting (seriously, go and look at the diagrams in the article) where they ate soup from bowls on a table. In the control group, participants could eat as much soup as they wanted and could ask for a top-up from the researchers. In the experimental group, the soup bowls automatically topped up through a series of hidden tubes under the table. The idea behind the control group is they get an accurate visual cue by the soup bowl reducing, and the experimental group get an inaccurate visual cue by the soup bowl seemingly never reducing. So, the inaccurate visual cue would interfere with natural signs of getting full and lead to people eating more.</p>
+<p>In the original article, participants in the experimental group ate more soup than participants in the control group, but the main author was involved in a series of research misconduct cases. Lopez et al.&nbsp;(2023) wanted to see if the result would replicate in an independent study, so they predicted they would find the same results.</p>
+<p>In the dataset, we have the following variables:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">ParticipantID</td>
+<td style="text-align: left;">Participant ID number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Sex</td>
+<td style="text-align: left;">Participant sex.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Age</td>
+<td style="text-align: left;">Participant age in years.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Ethnicity</td>
+<td style="text-align: left;">Participant ethnicity.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">OzEstimate</td>
+<td style="text-align: left;">Estimated soup consumption in ounces (Oz).</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">CalEstimate</td>
+<td style="text-align: left;">Estimated soup consumption in calories (kcals).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">M_postsoup</td>
+<td style="text-align: left;">Actual soup consumption in ounces (Oz).</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F_CaloriesConsumed</td>
+<td style="text-align: left;">Actual soup consumption in calories (kcals).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Condition</td>
+<td style="text-align: left;">Condition labelled numerically as 0 (Control) and 1 (Experimental).</td>
+</tr>
+</tbody>
+</table>
+<p>We will use this data to demonstrate how to create different types of plots in <code>ggplot2</code>.</p>
 
 
 </section>

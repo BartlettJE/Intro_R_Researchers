@@ -29,3 +29,40 @@ By the end of this part, you will be able to:
 - [Filter and summarise](https://psyteachr.github.io/quant-fun-v3/05-wrangling-2.html){target="_blank"}
 
 - [Pivots and pipes](https://psyteachr.github.io/quant-fun-v3/06-wrangling-3.html ){target="_blank"}
+
+## Target Dataset
+
+For this chapter, we are using open data from Alter et al. [(2024)](https://onlinelibrary.wiley.com/doi/10.1111/test.12374){target="_blank"}. The abstract of their article is:
+
+> The biggest difference in statistical training from previous decades is the increased use of software. However, little research examines how software impacts learning statistics. Assessing the value of software to statistical learning demands appropriate, valid, and reliable measures. The present study expands the arsenal of tools by reporting on the psychometric properties of the Value of Software to Statistical Learning (VSSL) scale in an undergraduate student sample. We propose a brief measure with strong psychometric support to assess students' perceived value of software in an educational setting. We provide data from a course using SPSS, given its wide use and popularity in the social sciences. However, the VSSL is adaptable to any statistical software, and we provide instructions for customizing it to suit alternative packages. Recommendations for administering, scoring, and interpreting the VSSL are provided to aid statistics instructors and education researchers understand how software influences students' statistical learning.
+
+To summarise, they developed a new scale to measure students' perceived value of software to learning statistics - Value of Software to Statistical Learning (VSSL). The authors wanted to develop this scale in a way that could be adapted to different software, from SPSS in their article (which some of you may have used in the past), to perhaps R in future. Alongside data from their new scale, they collected data from other scales measuring a similar kind of construct (e.g., Students' Attitudes toward Statistics and Technology) and related constructs (e.g., Quantitative Attitudes). 
+
+The data from Alter et al. is split into two data files. In `Alter_2024_demographics.csv`, we have the participant ID (`StudentIDE`) and several demographic variables. The columns (variables) we have in the data set are:
+
+| Variable       |           Description          |
+|:--------------:|:-------------------------------|
+| StudentIDE    |  Participant number             |
+| GenderE    |  Gender: 1 = Female, 2 = Male, 3 = Non-Binary |
+| RaceEthE    |  Race: 1 = Black/African American, 2 = Hispanic/Other Latinx, 3 = White, 4 = Multiracial, 5 = Asian/Pacific Islander, 6 = Native American/Alaska Native, 7 = South/Central American |
+| GradeE    |  Expected grade: 1 = A,	2 = B,	3 = C, 4 = D,	5 = F |
+| StuStaE    |  Student status: 1 = Freshman, 2 = Sophomore,	3 = Junior,	4 = Senior or Higher |
+| GPAE    |  Expected Grade Point Average (GPA) |
+| MajorE    |  Degree major |
+| AgeE    |  Age in years |
+
+In `Alter_2024_scales.csv`, we then have the participant ID (`StudentIDE`) and all the individual scale items. The columns (variables) we have in the data set are:
+
+| Variable       |           Description          |
+|:--------------:|:-------------------------------|
+| StudentIDE    |  Participant number             |
+| MA1E to MA8E    |  **Enjoyment of Mathematics and statistics**, not analysed in this study. |
+| QANX1E to QANX4E    |  **Quantitative anxiety**: four items scored on a 5-point Likert scale ranging from 1 (Not at all Anxious) to 5 (Extremely Anxious) |
+| QINFL1E to QINFL7E    |  **Quantitative attitudes**: seven items scored on a 5-point Likert scale ranging from 1 (Strongly Disagree) to 5 (Strongly Agree) |
+| QSF1E to QSF4E    |  **Study motivation**, not analysed in this study. |
+| QHIND1E to QHIND5E    |  **Quantitative hindrances**: five items scored on a 5-point Likert scale ranging from 1 (Strongly Disagree) to 5 (Strongly Agree) |
+| QSC1E to QSC4E    |  **Mathematical self-efficacy**, not analysed in this study. |
+| QSE1E to QSE6E    |  **Mathematical ability**, not analysed in this study. |
+| SPSS1E to SPSS10E    |  **VSSL scale on SPSS**: 10 items scored on a 5-point Likert scale ranging from 1 (Never True) to 5 (Always True) |
+
+We will use this data to demonstrate a range of key functions for wrangling data into different formats ready for analysis. 

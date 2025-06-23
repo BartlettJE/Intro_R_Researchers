@@ -177,6 +177,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#intended-learning-outcomes" id="toc-intended-learning-outcomes" class="nav-link active" data-scroll-target="#intended-learning-outcomes"><span class="header-section-number">4.1</span> Intended Learning Outcomes</a></li>
   <li><a href="#key-chapters" id="toc-key-chapters" class="nav-link" data-scroll-target="#key-chapters"><span class="header-section-number">4.2</span> Key chapters</a></li>
+  <li><a href="#target-dataset" id="toc-target-dataset" class="nav-link" data-scroll-target="#target-dataset"><span class="header-section-number">4.3</span> Target Dataset</a></li>
   </ul>
 </nav>
     </div>
@@ -224,6 +225,113 @@ ul.task-list li input[type="checkbox"] {
 <li><p><a href="https://psyteachr.github.io/quant-fun-v3/05-wrangling-2.html" target="_blank">Filter and summarise</a></p></li>
 <li><p><a href="https://psyteachr.github.io/quant-fun-v3/06-wrangling-3.html" target="_blank">Pivots and pipes</a></p></li>
 </ul>
+</section>
+<section id="target-dataset" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="target-dataset"><span class="header-section-number">4.3</span> Target Dataset</h2>
+<p>For this chapter, we are using open data from Alter et al.&nbsp;<a href="https://onlinelibrary.wiley.com/doi/10.1111/test.12374" target="_blank">(2024)</a>. The abstract of their article is:</p>
+<blockquote class="blockquote">
+<p>The biggest difference in statistical training from previous decades is the increased use of software. However, little research examines how software impacts learning statistics. Assessing the value of software to statistical learning demands appropriate, valid, and reliable measures. The present study expands the arsenal of tools by reporting on the psychometric properties of the Value of Software to Statistical Learning (VSSL) scale in an undergraduate student sample. We propose a brief measure with strong psychometric support to assess students’ perceived value of software in an educational setting. We provide data from a course using SPSS, given its wide use and popularity in the social sciences. However, the VSSL is adaptable to any statistical software, and we provide instructions for customizing it to suit alternative packages. Recommendations for administering, scoring, and interpreting the VSSL are provided to aid statistics instructors and education researchers understand how software influences students’ statistical learning.</p>
+</blockquote>
+<p>To summarise, they developed a new scale to measure students’ perceived value of software to learning statistics - Value of Software to Statistical Learning (VSSL). The authors wanted to develop this scale in a way that could be adapted to different software, from SPSS in their article (which some of you may have used in the past), to perhaps R in future. Alongside data from their new scale, they collected data from other scales measuring a similar kind of construct (e.g., Students’ Attitudes toward Statistics and Technology) and related constructs (e.g., Quantitative Attitudes).</p>
+<p>The data from Alter et al.&nbsp;is split into two data files. In <code>Alter_2024_demographics.csv</code>, we have the participant ID (<code>StudentIDE</code>) and several demographic variables. The columns (variables) we have in the data set are:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">StudentIDE</td>
+<td style="text-align: left;">Participant number</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">GenderE</td>
+<td style="text-align: left;">Gender: 1 = Female, 2 = Male, 3 = Non-Binary</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">RaceEthE</td>
+<td style="text-align: left;">Race: 1 = Black/African American, 2 = Hispanic/Other Latinx, 3 = White, 4 = Multiracial, 5 = Asian/Pacific Islander, 6 = Native American/Alaska Native, 7 = South/Central American</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">GradeE</td>
+<td style="text-align: left;">Expected grade: 1 = A, 2 = B, 3 = C, 4 = D, 5 = F</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">StuStaE</td>
+<td style="text-align: left;">Student status: 1 = Freshman, 2 = Sophomore, 3 = Junior, 4 = Senior or Higher</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">GPAE</td>
+<td style="text-align: left;">Expected Grade Point Average (GPA)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">MajorE</td>
+<td style="text-align: left;">Degree major</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">AgeE</td>
+<td style="text-align: left;">Age in years</td>
+</tr>
+</tbody>
+</table>
+<p>In <code>Alter_2024_scales.csv</code>, we then have the participant ID (<code>StudentIDE</code>) and all the individual scale items. The columns (variables) we have in the data set are:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Variable</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">StudentIDE</td>
+<td style="text-align: left;">Participant number</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">MA1E to MA8E</td>
+<td style="text-align: left;"><strong>Enjoyment of Mathematics and statistics</strong>, not analysed in this study.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">QANX1E to QANX4E</td>
+<td style="text-align: left;"><strong>Quantitative anxiety</strong>: four items scored on a 5-point Likert scale ranging from 1 (Not at all Anxious) to 5 (Extremely Anxious)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">QINFL1E to QINFL7E</td>
+<td style="text-align: left;"><strong>Quantitative attitudes</strong>: seven items scored on a 5-point Likert scale ranging from 1 (Strongly Disagree) to 5 (Strongly Agree)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">QSF1E to QSF4E</td>
+<td style="text-align: left;"><strong>Study motivation</strong>, not analysed in this study.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">QHIND1E to QHIND5E</td>
+<td style="text-align: left;"><strong>Quantitative hindrances</strong>: five items scored on a 5-point Likert scale ranging from 1 (Strongly Disagree) to 5 (Strongly Agree)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">QSC1E to QSC4E</td>
+<td style="text-align: left;"><strong>Mathematical self-efficacy</strong>, not analysed in this study.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">QSE1E to QSE6E</td>
+<td style="text-align: left;"><strong>Mathematical ability</strong>, not analysed in this study.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">SPSS1E to SPSS10E</td>
+<td style="text-align: left;"><strong>VSSL scale on SPSS</strong>: 10 items scored on a 5-point Likert scale ranging from 1 (Never True) to 5 (Always True)</td>
+</tr>
+</tbody>
+</table>
+<p>We will use this data to demonstrate a range of key functions for wrangling data into different formats ready for analysis.</p>
 
 
 </section>
