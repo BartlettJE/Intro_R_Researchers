@@ -20,6 +20,8 @@ Below are a series of other R resources you might find useful to demonstrate it'
 
 There are a bunch of people on social media who are always sharing cool stuff using R for visualisation or analysis. If you want to see what else you can do with R, I recommend giving these people a follow in no particular order: 
 
+- [Sophie Lee](https://scubed.rbind.io/blog/){target="_blank"} - Statistical programming training coordinator and has a nice blog about [tips for aspiring R users](https://scubed.rbind.io/blog/2025_06_25_newr/){target="_blank"}. 
+
 - [Nicola Rennie](https://bsky.app/profile/nrennie.bsky.social){target="_blank"} - Data visualisation specialist. 
 
 - [Cédric Scherer](https://bsky.app/profile/cedricscherer.com){target="_blank"} - Data visualisation specialist. 
