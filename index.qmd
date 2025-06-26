@@ -25,4 +25,6 @@ We will follow the rough schedule for the day below. Some tasks might take less 
 
 Before the workshop, please make sure you have downloaded R and R Studio to your computer. I created an [installing R guide](https://psyteachr.github.io/RSetGo/){target="_blank"} for our students, so you can follow the instructions depending whether you are using a PC or a Mac. 
 
-Some of the files you will create from scratch; while others I have prepared some templates for or provide data files. Please download the following files in preparation and I will instruct you where to save them during the workshop: [workshop files](). 
+The only package you will need to install is <pkg>tidyverse</pkg>, but I will walk through the package installation process during the workshop. So, just make sure you can install things if you are using a work computer (some IT settings can be pretty restrictive) and that you can use WiFi during the session. 
+
+Some of the files you will create from scratch; while others I have prepared some templates for or provide data files. Please download the following files in preparation and I will instruct you where to save them during the workshop: [workshop files]() [not available quite yet]. 

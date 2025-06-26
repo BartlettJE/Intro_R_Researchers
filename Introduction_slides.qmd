@@ -24,15 +24,15 @@ editor: visual
 
 ## Intended learning outcomes
 
-By the end of the workshop, you will be able to: 
+By the end of the workshop, you will be able to:
 
-1. Write reproducible reports using R Markdown / Quarto.
+1.  Write reproducible reports using R Markdown / Quarto.
 
-2. Clean and wrangle data into appropriate forms for visualisation and analysis.
+2.  Clean and wrangle data into appropriate forms for visualisation and analysis.
 
-3. Use the `ggplot2` package for creating a range of plots.
+3.  Use the `ggplot2` package for creating a range of plots.
 
-4. Share/receive code to conduct a brief code review.
+4.  Share/receive code to conduct a brief code review.
 
 ## Rough schedule {.smaller}
 
@@ -45,17 +45,19 @@ By the end of the workshop, you will be able to:
 | 14:30-15:30 | Data wrangling                             |
 | 15:30-16:30 | Code review and wrap up                    |
 
-## Why R? 
+## Why R?
 
 **Perfect for researchers**
 
-- Well-integrated tool popular in psychology researchers.
+-   Well-integrated tool popular in psychology researchers.
 
-- Ecosystem of well-maintained packages (e.g., *tidyverse*).
+-   Ecosystem of well-maintained packages (e.g., *tidyverse*).
+
+- Develop a complete reproducible pipeline from raw data to your analysis. 
 
 **Perfect for educators**
 
-- Reinforce *reproducible teaching* ([Dogucu & Çetinkaya-Rundel, 2022](https://doi.org/10.1080/26939169.2022.2138645)) through using Quarto to create teaching materials.
+-   Reinforce *reproducible teaching* ([Dogucu & Çetinkaya-Rundel, 2022](https://doi.org/10.1080/26939169.2022.2138645)) through using Quarto to create teaching materials.
 
 ## R workflow
 
