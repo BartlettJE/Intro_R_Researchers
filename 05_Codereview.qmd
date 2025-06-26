@@ -70,8 +70,12 @@ Can the results be reproduced? Like step 4 in the 4 Rs, the idea is to check the
 
 Is there a clear link between the code and output? As you read through the code, make sure it is clear what each part of the code does. For example, wrangling data and what exclusion criteria mean, and visualising data and what plot settings do.
 
-Key resource: 
+## Further resources
 
-- https://debruine.github.io/talks/code-review/#/title-slide
+To learn more about code review, I recommend the following resources: 
 
-- Create a shared OneDrive for people to drop their files into 
+- @ivimey-cook_implementing_2023 is a great paper that I structured this guide around, so I recommend giving it a read to learn more about code review in science. 
+
+- @roth_ten_2025 present ten principles for reliable, efficient, and adaptable code. 
+
+- My colleague [Lisa DeBruine](https://debruine.github.io/){target="_blank"} has been working on a code review project and she has presented several talks on [code review](https://debruine.github.io/talks/code-review/#/title-slide){target="_blank"} you might want to check out. 
