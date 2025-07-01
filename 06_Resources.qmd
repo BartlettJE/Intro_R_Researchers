@@ -16,6 +16,10 @@ Below are a series of other R resources you might find useful to demonstrate it'
 
 - [R for Data Science](https://r4ds.hadley.nz/){target="_blank"}: This book covers data science by some of the leaders behind Posit and the tidyverse family of packages. You will learn about reproducible workflows, working with text data, and creating functions. 
 
+- [Visualization for Social Data Science](https://vis4sds.github.io/vis4sds/){target="_blank"} by Beecham: This book uses Quarto and `ggplot2` to demonstrate different visualisation techniques relevant to social sciences, such as networks and model uncertainty. 
+
+- [Data Visualisation: A Practical Introduction](https://socviz.co/){target="_blank"} by Healy: This book uses `ggplot2` again to create different types of data visualisation such as maps and model uncertainty, in addition to principles of transparent data storytelling. 
+
 ## Key people to follow
 
 There are a bunch of people on social media who are always sharing cool stuff using R for visualisation or analysis. If you want to see what else you can do with R, I recommend giving these people a follow in no particular order: 
