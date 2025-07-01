@@ -32,7 +32,7 @@ By the end of this part, you will be able to:
 
 ## Target Dataset
 
-For this chapter, we are using open data from Alter et al. [(2024)](https://onlinelibrary.wiley.com/doi/10.1111/test.12374){target="_blank"}. The abstract of their article is:
+For this chapter, we are using open data from @alter_vssl_2024. The abstract of their article is:
 
 > The biggest difference in statistical training from previous decades is the increased use of software. However, little research examines how software impacts learning statistics. Assessing the value of software to statistical learning demands appropriate, valid, and reliable measures. The present study expands the arsenal of tools by reporting on the psychometric properties of the Value of Software to Statistical Learning (VSSL) scale in an undergraduate student sample. We propose a brief measure with strong psychometric support to assess students' perceived value of software in an educational setting. We provide data from a course using SPSS, given its wide use and popularity in the social sciences. However, the VSSL is adaptable to any statistical software, and we provide instructions for customizing it to suit alternative packages. Recommendations for administering, scoring, and interpreting the VSSL are provided to aid statistics instructors and education researchers understand how software influences students' statistical learning.
 
