@@ -6,6 +6,16 @@ The aim of code review is to provide a formal or informal evaluation of someone 
 
 For the purposes of this task at the end of the day, I have prepared a little task to bring together the wrangling and visualisation skills you have learnt so far. You will complete the task on your own at first before you send the .Qmd file to your partner for a code review. You will then complete a little checklist to discuss with your partner but keep in mind: this was likely new to most of you, so be kind and constructive! 
 
+## Intended Learning Outcomes
+
+By the end of this part, you will be able to:
+
+- Apply your wrangling and visualisation skills to a new dataset. 
+
+- Understand the basic principles of code review for quality control. 
+
+- Conduct a code review of your partner's code. 
+
 ## Target dataset
 
 For the new task to support the code review activity, we have a new dataset from @farias_atheists_2019. They recruited a field sample of 360 participants who hiked the Santiago Way, a popular pilgrimage route. Despite its popularity, little research had explored what motivates people to make the journey. In addition, there was little research exploring atheists motivations for hiking a popular religious pilgrimage route. Therefore, Farias et al. wanted to compare types of motivation to go on a pilgrimage in Atheists and Christians. 
