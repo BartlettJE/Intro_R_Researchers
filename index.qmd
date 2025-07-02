@@ -27,4 +27,4 @@ Before the workshop, please make sure you have downloaded R and R Studio to your
 
 The only package you will need to install is <pkg>tidyverse</pkg>, but I will walk through the package installation process during the workshop. So, just make sure you can install things if you are using a work computer (some IT settings can be pretty restrictive) and that you can use WiFi during the session. 
 
-Some of the files you will create from scratch; while others I have prepared some templates for or provide data files. Please download the following files in preparation and I will instruct you where to save them during the workshop: [workshop files]() [not available quite yet]. 
+Some of the files you will create from scratch; while others I have prepared some templates for and provide data files. Please download the following files in preparation and I will instruct you where to save them during the workshop: [workshop files](include/Workshop_materials.zip). 
