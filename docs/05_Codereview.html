@@ -195,22 +195,23 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#target-dataset" id="toc-target-dataset" class="nav-link active" data-scroll-target="#target-dataset"><span class="header-section-number">5.1</span> Target dataset</a></li>
-  <li><a href="#the-4-rs" id="toc-the-4-rs" class="nav-link" data-scroll-target="#the-4-rs"><span class="header-section-number">5.2</span> The 4 Rs</a>
+  <li><a href="#intended-learning-outcomes" id="toc-intended-learning-outcomes" class="nav-link active" data-scroll-target="#intended-learning-outcomes"><span class="header-section-number">5.1</span> Intended Learning Outcomes</a></li>
+  <li><a href="#target-dataset" id="toc-target-dataset" class="nav-link" data-scroll-target="#target-dataset"><span class="header-section-number">5.2</span> Target dataset</a></li>
+  <li><a href="#the-4-rs" id="toc-the-4-rs" class="nav-link" data-scroll-target="#the-4-rs"><span class="header-section-number">5.3</span> The 4 Rs</a>
   <ul class="collapse">
-  <li><a href="#is-the-code-as-reported" id="toc-is-the-code-as-reported" class="nav-link" data-scroll-target="#is-the-code-as-reported"><span class="header-section-number">5.2.1</span> Is the code as reported?</a></li>
-  <li><a href="#does-the-code-run" id="toc-does-the-code-run" class="nav-link" data-scroll-target="#does-the-code-run"><span class="header-section-number">5.2.2</span> Does the code run?</a></li>
-  <li><a href="#is-the-code-reliable" id="toc-is-the-code-reliable" class="nav-link" data-scroll-target="#is-the-code-reliable"><span class="header-section-number">5.2.3</span> Is the code reliable</a></li>
-  <li><a href="#are-the-results-reproducible" id="toc-are-the-results-reproducible" class="nav-link" data-scroll-target="#are-the-results-reproducible"><span class="header-section-number">5.2.4</span> Are the results reproducible?</a></li>
+  <li><a href="#is-the-code-as-reported" id="toc-is-the-code-as-reported" class="nav-link" data-scroll-target="#is-the-code-as-reported"><span class="header-section-number">5.3.1</span> Is the code as reported?</a></li>
+  <li><a href="#does-the-code-run" id="toc-does-the-code-run" class="nav-link" data-scroll-target="#does-the-code-run"><span class="header-section-number">5.3.2</span> Does the code run?</a></li>
+  <li><a href="#is-the-code-reliable" id="toc-is-the-code-reliable" class="nav-link" data-scroll-target="#is-the-code-reliable"><span class="header-section-number">5.3.3</span> Is the code reliable</a></li>
+  <li><a href="#are-the-results-reproducible" id="toc-are-the-results-reproducible" class="nav-link" data-scroll-target="#are-the-results-reproducible"><span class="header-section-number">5.3.4</span> Are the results reproducible?</a></li>
   </ul></li>
-  <li><a href="#code-review-across-the-workflow" id="toc-code-review-across-the-workflow" class="nav-link" data-scroll-target="#code-review-across-the-workflow"><span class="header-section-number">5.3</span> Code review across the workflow</a>
+  <li><a href="#code-review-across-the-workflow" id="toc-code-review-across-the-workflow" class="nav-link" data-scroll-target="#code-review-across-the-workflow"><span class="header-section-number">5.4</span> Code review across the workflow</a>
   <ul class="collapse">
-  <li><a href="#project-organisation" id="toc-project-organisation" class="nav-link" data-scroll-target="#project-organisation"><span class="header-section-number">5.3.1</span> Project organisation</a></li>
-  <li><a href="#project-and-input-metadata" id="toc-project-and-input-metadata" class="nav-link" data-scroll-target="#project-and-input-metadata"><span class="header-section-number">5.3.2</span> Project and input metadata</a></li>
-  <li><a href="#code-readability" id="toc-code-readability" class="nav-link" data-scroll-target="#code-readability"><span class="header-section-number">5.3.3</span> Code readability</a></li>
-  <li><a href="#output-reproducibility" id="toc-output-reproducibility" class="nav-link" data-scroll-target="#output-reproducibility"><span class="header-section-number">5.3.4</span> Output reproducibility</a></li>
+  <li><a href="#project-organisation" id="toc-project-organisation" class="nav-link" data-scroll-target="#project-organisation"><span class="header-section-number">5.4.1</span> Project organisation</a></li>
+  <li><a href="#project-and-input-metadata" id="toc-project-and-input-metadata" class="nav-link" data-scroll-target="#project-and-input-metadata"><span class="header-section-number">5.4.2</span> Project and input metadata</a></li>
+  <li><a href="#code-readability" id="toc-code-readability" class="nav-link" data-scroll-target="#code-readability"><span class="header-section-number">5.4.3</span> Code readability</a></li>
+  <li><a href="#output-reproducibility" id="toc-output-reproducibility" class="nav-link" data-scroll-target="#output-reproducibility"><span class="header-section-number">5.4.4</span> Output reproducibility</a></li>
   </ul></li>
-  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources"><span class="header-section-number">5.4</span> Further resources</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources"><span class="header-section-number">5.5</span> Further resources</a></li>
   </ul>
 </nav>
     </div>
@@ -239,8 +240,17 @@ div.csl-indent {
 <p>For the final section, I will introduction people to the concept of code review and establishing it as a practice early. Code review is extremely common in software engineering but rare in academia despite the rise in programming-based statistics software like R/RStudio.</p>
 <p>The aim of code review is to provide a formal or informal evaluation of someone else’s code to make sure it works and it is producing the intended output. I am organising the advice around <span class="citation" data-cites="ivimey-cook_implementing_2023">Ivimey-Cook et al. (<a href="references.html#ref-ivimey-cook_implementing_2023" role="doc-biblioref">2023</a>)</span> who wrote about code review in science and provide a check-list for you to refer to. It is not about code being perfect, but trying to identify points of weakness that could introduce errors into the scientific record.</p>
 <p>For the purposes of this task at the end of the day, I have prepared a little task to bring together the wrangling and visualisation skills you have learnt so far. You will complete the task on your own at first before you send the .Qmd file to your partner for a code review. You will then complete a little checklist to discuss with your partner but keep in mind: this was likely new to most of you, so be kind and constructive!</p>
-<section id="target-dataset" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="target-dataset"><span class="header-section-number">5.1</span> Target dataset</h2>
+<section id="intended-learning-outcomes" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="intended-learning-outcomes"><span class="header-section-number">5.1</span> Intended Learning Outcomes</h2>
+<p>By the end of this part, you will be able to:</p>
+<ul>
+<li><p>Apply your wrangling and visualisation skills to a new dataset.</p></li>
+<li><p>Understand the basic principles of code review for quality control.</p></li>
+<li><p>Conduct a code review of your partner’s code.</p></li>
+</ul>
+</section>
+<section id="target-dataset" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="target-dataset"><span class="header-section-number">5.2</span> Target dataset</h2>
 <p>For the new task to support the code review activity, we have a new dataset from <span class="citation" data-cites="farias_atheists_2019">Farias et al. (<a href="references.html#ref-farias_atheists_2019" role="doc-biblioref">2019</a>)</span>. They recruited a field sample of 360 participants who hiked the Santiago Way, a popular pilgrimage route. Despite its popularity, little research had explored what motivates people to make the journey. In addition, there was little research exploring atheists motivations for hiking a popular religious pilgrimage route. Therefore, Farias et al.&nbsp;wanted to compare types of motivation to go on a pilgrimage in Atheists and Christians.</p>
 <p>In the files, you will find data from 360 participants, some who identified as Christian and some who identified as Atheists. All the participants then completed a motivation to go on a pilgrimage questionnaire which had six subscales. They measured motivations on a 1 to 6 scale, with higher scores meaning higher importance. For this task, I already created subscale scores by taking the mean of the items. The subscales in the questionnaire are:</p>
 <ol type="1">
@@ -254,15 +264,15 @@ div.csl-indent {
 <p>The data from Farias et al.&nbsp;is split into two data files. In <code>Farias_demo.csv</code>, we have the participant ID (<code>Participant</code>), their age in year (<code>Age</code>), and their religious group (<code>Religion</code>: 0 = Atheists, 1 = Christians).</p>
 <p>In <code>Farias_scales.csv</code>, we then have the participant ID (<code>Participant</code>), all six motivation subscales (<code>motivation_subscale</code>), and the mean subscale score for each motivation (<code>mean_score</code>).</p>
 </section>
-<section id="the-4-rs" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="the-4-rs"><span class="header-section-number">5.2</span> The 4 Rs</h2>
+<section id="the-4-rs" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="the-4-rs"><span class="header-section-number">5.3</span> The 4 Rs</h2>
 <p>Ivimey-Cook et al.&nbsp;present the 4 Rs behind code review. You might not be able to complete every step for this relatively short task, but it will be important for your future work.</p>
-<section id="is-the-code-as-reported" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="is-the-code-as-reported"><span class="header-section-number">5.2.1</span> Is the code as reported?</h3>
+<section id="is-the-code-as-reported" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="is-the-code-as-reported"><span class="header-section-number">5.3.1</span> Is the code as reported?</h3>
 <p>The methods and code must match. This means what someone describes in say the method and results section is actually what they apply. For example, if they reported a Pearson correlation but the code is actually for a Spearman correlation, this would be a mismatch between the methods and code. You were all following the same instructions, so you should be able to recognise if your partner applied the instructions accurately, but this will be more useful when it comes to your own papers and projects.</p>
 </section>
-<section id="does-the-code-run" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="does-the-code-run"><span class="header-section-number">5.2.2</span> Does the code run?</h3>
+<section id="does-the-code-run" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="does-the-code-run"><span class="header-section-number">5.3.2</span> Does the code run?</h3>
 <p>If you press run/render, does the code run? This is the simplest check as you do not need to know the intention of the code, just whether it runs or not.</p>
 <p>This step is achievable for everyone who completes code review. If the folder and file organisation is correct, you should be able to click run all or render, and the code should run in a new session.</p>
 <p>If it does not run, consider the following:</p>
@@ -273,43 +283,43 @@ div.csl-indent {
 <li><p>Is the code in the wrong order, so it does not run from the start to the finish?</p></li>
 </ul>
 </section>
-<section id="is-the-code-reliable" class="level3" data-number="5.2.3">
-<h3 data-number="5.2.3" class="anchored" data-anchor-id="is-the-code-reliable"><span class="header-section-number">5.2.3</span> Is the code reliable</h3>
+<section id="is-the-code-reliable" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="is-the-code-reliable"><span class="header-section-number">5.3.3</span> Is the code reliable</h3>
 <p>Similar to step 1, the idea here is whether the code runs and completes as intended. The worst kind of errors are when code “runs”, but it does not produce the intended output. For example, you select the wrong column, introduce NAs, or use the wrong function. You are all following the same instructions here but it will be more applicable once it comes to working through the whole wrangling to analysis process in your own research.</p>
 </section>
-<section id="are-the-results-reproducible" class="level3" data-number="5.2.4">
-<h3 data-number="5.2.4" class="anchored" data-anchor-id="are-the-results-reproducible"><span class="header-section-number">5.2.4</span> Are the results reproducible?</h3>
+<section id="are-the-results-reproducible" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="are-the-results-reproducible"><span class="header-section-number">5.3.4</span> Are the results reproducible?</h3>
 <p>The final step is checking whether the results are reproducible. The idea is to check the output from the code matches what you write in a manuscript. For example, if your code produces a Pearson’s correlation with <em>r</em> = .35, but your manuscript reports <em>r</em> = .53, this would not be reproducible. This will not be possible for today’s tasks as we’re not reporting analyses, but the opportunity to include inline code to insert values from your analyses is one of the best features of R for reproducibility.</p>
 </section>
 </section>
-<section id="code-review-across-the-workflow" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="code-review-across-the-workflow"><span class="header-section-number">5.3</span> Code review across the workflow</h2>
+<section id="code-review-across-the-workflow" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="code-review-across-the-workflow"><span class="header-section-number">5.4</span> Code review across the workflow</h2>
 <p>Ivimey-Cook et al.&nbsp;also include suggestions for where in the project workflow code review can be useful.</p>
-<section id="project-organisation" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="project-organisation"><span class="header-section-number">5.3.1</span> Project organisation</h3>
+<section id="project-organisation" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="project-organisation"><span class="header-section-number">5.4.1</span> Project organisation</h3>
 <p>Is the folder structure logical? Do you/they use clear folder and sub-folder structure?</p>
 <p>Are the raw data, code, and outputs separated? Do you/they store each component separately?</p>
 <p>Do the file and folder names complement the workflow? Are the names of the files and folder clear enough that you can understand what everything does days, weeks, or months down the line?</p>
 </section>
-<section id="project-and-input-metadata" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="project-and-input-metadata"><span class="header-section-number">5.3.2</span> Project and input metadata</h3>
+<section id="project-and-input-metadata" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="project-and-input-metadata"><span class="header-section-number">5.4.2</span> Project and input metadata</h3>
 <p>Can someone understand the workflow and content of the data? If there are multiple scripts or files, is it clear which one you should open first to complete the coding steps in the correct order?</p>
 <p>Is a README provided to explains data contents and curation? This is not something we expect on this course, but a README is a separate file which explains what all the other files and folder do.</p>
 </section>
-<section id="code-readability" class="level3" data-number="5.3.3">
-<h3 data-number="5.3.3" class="anchored" data-anchor-id="code-readability"><span class="header-section-number">5.3.3</span> Code readability</h3>
+<section id="code-readability" class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="code-readability"><span class="header-section-number">5.4.3</span> Code readability</h3>
 <p>Is the code understandable? Using clear headings and sub-headings, adding intuitive code comments, use clear object names for what they represent.</p>
 <p>Does the code have a consistent style? When naming objects, using a clear and consistent naming convention like snake case (clean_data) or camel case (CleanData).</p>
 <p>Is external package use clearly documented? For example, checking they load all the packages in one place and there are not redundant packages which they do not use.</p>
 </section>
-<section id="output-reproducibility" class="level3" data-number="5.3.4">
-<h3 data-number="5.3.4" class="anchored" data-anchor-id="output-reproducibility"><span class="header-section-number">5.3.4</span> Output reproducibility</h3>
+<section id="output-reproducibility" class="level3" data-number="5.4.4">
+<h3 data-number="5.4.4" class="anchored" data-anchor-id="output-reproducibility"><span class="header-section-number">5.4.4</span> Output reproducibility</h3>
 <p>Can the results be reproduced? Like step 4 in the 4 Rs, the idea is to check the output from the code matches what you write in the report.</p>
 <p>Is there a clear link between the code and output? As you read through the code, make sure it is clear what each part of the code does. For example, wrangling data and what exclusion criteria mean, and visualising data and what plot settings do.</p>
 </section>
 </section>
-<section id="further-resources" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="further-resources"><span class="header-section-number">5.4</span> Further resources</h2>
+<section id="further-resources" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="further-resources"><span class="header-section-number">5.5</span> Further resources</h2>
 <p>To learn more about code review, I recommend the following resources:</p>
 <ul>
 <li><p><span class="citation" data-cites="ivimey-cook_implementing_2023">Ivimey-Cook et al. (<a href="references.html#ref-ivimey-cook_implementing_2023" role="doc-biblioref">2023</a>)</span> is a great paper that I structured this guide around, so I recommend giving it a read to learn more about code review in science.</p></li>

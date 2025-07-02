@@ -19,7 +19,7 @@ We will follow the rough schedule for the day below. Some tasks might take less 
 | 13:00-13:30 | Lunch                                      |
 | 13:30-14:30 | Data visualisation                         |
 | 14:30-15:30 | Data wrangling                             |
-| 15:30-16:30 | Code review and wrap up                    |
+| 15:30-16:30 | Independent task and code review           |
 
 ## Preparation before the workshop
 

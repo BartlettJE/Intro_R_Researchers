@@ -45,12 +45,11 @@ By the end of the workshop, you will be able to:
 | 14:30-15:30 | Data wrangling                             |
 | 15:30-16:30 | Independent task and code review           |
 
-## Why R? 
+## Why R?
 
 **Perfect for researchers**
 
-:::{.incremental}
-
+::: incremental
 -   Well-integrated tool popular in psychology researchers.
 
 -   Ecosystem of well-maintained packages (e.g., *tidyverse*).
@@ -60,10 +59,8 @@ By the end of the workshop, you will be able to:
 
 **Perfect for educators**
 
-:::{.incremental}
-
+::: incremental
 -   Reinforce *reproducible teaching* ([Dogucu & Çetinkaya-Rundel, 2022](https://doi.org/10.1080/26939169.2022.2138645)) through using Quarto to create teaching materials.
-
 :::
 
 ## R workflow
@@ -76,16 +73,13 @@ Image: [Wickham et al. (2023)](https://r4ds.hadley.nz/)
 
 ## Key messages
 
-:::: {.columns}
+::: columns
+::: {.column .incremental width="50%"}
+-   No one is going to be an expert R user after today; you will learn by doing.
 
-::: {.column width="50%" .incremental}
+-   There is nothing wrong with copying and adapting code; you need to know enough to know how to find solutions.
 
-- No one is going to be an expert R user after today; you will learn by doing. 
-
-- There is nothing wrong with copying and adapting code; you need to know enough to know how to find solutions.
-
-- Your code does not need to be pretty, just annotated and reliable. 
-
+-   Your code does not need to be pretty, just annotated and reliable.
 :::
 
 ::: {.column width="50%"}
@@ -93,8 +87,7 @@ Image: [Wickham et al. (2023)](https://r4ds.hadley.nz/)
 knitr::include_graphics("images/change_stuff.jpg")
 ```
 :::
-
-::::
+:::
 
 ## Introduction to R/RStudio
 
@@ -102,13 +95,13 @@ knitr::include_graphics("images/change_stuff.jpg")
 
 By the end of this part, you will be able to:
 
-- Navigate and interact with RStudio.
+-   Navigate and interact with RStudio.
 
-- Use an R function and find help documentation.
+-   Use an R function and find help documentation.
 
-- Install and load R packages.
+-   Install and load R packages.
 
-- Assign content to an object.
+-   Assign content to an object.
 
 ## Writing reproducible documents
 
@@ -116,68 +109,82 @@ By the end of this part, you will be able to:
 
 By the end of this part, you will be able to:
 
-- Understand and set your working directory, either manually or through creating an R project.
+-   Understand and set your working directory, either manually or through creating an R project.
 
-- Create and render a Quarto file to create a reproducible document.
+-   Create and render a Quarto file to create a reproducible document.
 
-- Use inline code to combine text and code output in your reproducible documents.
+-   Use inline code to combine text and code output in your reproducible documents.
 
-- Identify and fix common errors in rendering Quarto files.
+-   Identify and fix common errors in rendering Quarto files.
 
 ## Data visualisation {.smaller}
 
-**Target dataset**: Lopez et al. (2023) on visual cues and food intake. 
+**Target dataset**: Lopez et al. (2023) on visual cues and food intake.
 
 **Intended learning outcomes**:
 
 By the end of this part, you will be able to:
 
-- Understand the `ggplot2` layering system of creating plots.
+-   Understand the `ggplot2` layering system of creating plots.
 
-- Create and edit histograms to visualise the frequency of observations collated into bins.
+-   Create and edit histograms to visualise the frequency of observations collated into bins.
 
-- Create and edit barplots to visualise the frequency of different categories.
+-   Create and edit barplots to visualise the frequency of different categories.
 
-- Create and edit a scatterplot to visualise the relationship between two continuous variables.
+-   Create and edit a scatterplot to visualise the relationship between two continuous variables.
 
-- Create and edit a violin-boxplot to visualise the density of data points in a continuous outcome.
+-   Create and edit a violin-boxplot to visualise the density of data points in a continuous outcome.
 
-- Save plots as an image to use in reports or presentations.
+-   Save plots as an image to use in reports or presentations.
 
 ## Data wrangling {.smaller}
 
-**Target dataset**: Alter et al. (2024) on assessing the perceived value of statistics software. 
+**Target dataset**: Alter et al. (2024) on assessing the perceived value of statistics software.
 
 **Intended learning outcomes**:
 
 By the end of this part, you will be able to:
 
-- Join two data sets by matching one or more identifying columns in common.
+-   Join two data sets by matching one or more identifying columns in common.
 
-- Select a range and reorder variables in your data set.
+-   Select a range and reorder variables in your data set.
 
-- Modify or create variables, such as recoding values or creating new groups.
+-   Modify or create variables, such as recoding values or creating new groups.
 
-- Filter observations to retain a subset of your data.
+-   Filter observations to retain a subset of your data.
 
-- Summarise your data to calculate summary statistics.
+-   Summarise your data to calculate summary statistics.
 
-- Restructure data into different formats, such as long and wide form.
+-   Restructure data into different formats, such as long and wide form.
 
-- String together multiple functions using pipes.
+-   String together multiple functions using pipes.
 
-## Independent task and code review 
+## Code review
 
-**Target dataset**: Farias et al. (2019) on motivations to go on a pilgrimage. 
+Inspired by Ivimey-Cook et al. (2023), we will explore the four Rs: 
+
+::: {.incremental}
+
+1. Is the code as reported? 
+
+2. Does the code run? 
+
+3. Is the code reliable? 
+
+4. Are the results reproducible? 
+
+:::
+
+## Independent task and code review
+
+**Target dataset**: Farias et al. (2019) on motivations to go on a pilgrimage.
 
 **Intended learning outcomes**:
 
 By the end of this part, you will be able to:
 
-- Apply your wrangling and visualisation skills to a new dataset. 
+-   Apply your wrangling and visualisation skills to a new dataset.
 
-- Understand the basic principles of code review for quality control. 
+-   Understand the basic principles of code review for quality control.
 
-- Conduct a code review of your partner's code. 
-
-
+-   Conduct a code review of your partner's code.
