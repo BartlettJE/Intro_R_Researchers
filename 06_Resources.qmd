@@ -12,9 +12,9 @@ You can see our whole suite of [PsyTeachR](https://psyteachr.github.io/){target=
 
 Below are a series of other R resources you might find useful to demonstrate it's utility, from your own research, to how you might use it in your teaching practice. 
 
-- [Dissemination using Quarto and Github Pages](https://bartlettje.github.io/dissemination_quarto/){target="_blank"}: Once you get the hang of using Quarto, you can use it for different types of dissemination, such as creating websites, books, and presentations. For example, I wrote this book and the Fundamentals of Quantitative Analysis book all within R using Quarto. Combining it with github pages means you can share your work with others and help develop your profile. 
+- [Dissemination using Quarto and Github Pages](https://bartlettje.github.io/dissemination_quarto/){target="_blank"} by me...: Once you get the hang of using Quarto, you can use it for different types of dissemination, such as creating websites, books, and presentations. For example, I wrote this book and the Fundamentals of Quantitative Analysis book all within R using Quarto. Combining it with github pages means you can share your work with others and help develop your profile. 
 
-- [R for Data Science](https://r4ds.hadley.nz/){target="_blank"}: This book covers data science by some of the leaders behind Posit and the tidyverse family of packages. You will learn about reproducible workflows, working with text data, and creating functions. 
+- [R for Data Science](https://r4ds.hadley.nz/){target="_blank"} by Wickham et al.: This book covers data science by some of the leaders behind Posit and the tidyverse family of packages. You will learn about reproducible workflows, working with text data, and creating functions. 
 
 - [Visualization for Social Data Science](https://vis4sds.github.io/vis4sds/){target="_blank"} by Beecham: This book uses Quarto and `ggplot2` to demonstrate different visualisation techniques relevant to social sciences, such as networks and model uncertainty. 
 

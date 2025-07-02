@@ -4,11 +4,34 @@ For the final section, I will introduction people to the concept of code review 
 
 The aim of code review is to provide a formal or informal evaluation of someone else’s code to make sure it works and it is producing the intended output. I am organising the advice around @ivimey-cook_implementing_2023 who wrote about code review in science and provide a check-list for you to refer to. It is not about code being perfect, but trying to identify points of weakness that could introduce errors into the scientific record.
 
-For the purposes of this task at the end of the day, you will package up and share your code from one of the sections with someone else in the workshop. You will complete a little checklist to discuss with your partner but keep in mind: this was likely new to most of you, so be kind and constructive! 
+For the purposes of this task at the end of the day, I have prepared a little task to bring together the wrangling and visualisation skills you have learnt so far. You will complete the task on your own at first before you send the .Qmd file to your partner for a code review. You will then complete a little checklist to discuss with your partner but keep in mind: this was likely new to most of you, so be kind and constructive! 
+
+## Target dataset
+
+For the new task to support the code review activity, we have a new dataset from @farias_atheists_2019. They recruited a field sample of 360 participants who hiked the Santiago Way, a popular pilgrimage route. Despite its popularity, little research had explored what motivates people to make the journey. In addition, there was little research exploring atheists motivations for hiking a popular religious pilgrimage route. Therefore, Farias et al. wanted to compare types of motivation to go on a pilgrimage in Atheists and Christians. 
+
+In the files, you will find data from 360 participants, some who identified as Christian and some who identified as Atheists. All the participants then completed a motivation to go on a pilgrimage questionnaire which had six subscales. They measured motivations on a 1 to 6 scale, with higher scores meaning higher importance. For this task, I already created subscale scores by taking the mean of the items. The subscales in the questionnaire are: 
+
+1. Closeness to nature (`Nature_close`)
+
+2. Sensation seeking (`Sen_seek`)
+
+3. Community (`Community`)
+
+4. Religious growth (`Rel_growth`)
+
+5. Spiritual growth (`Spirit_growth`)
+
+6. Search for life direction (`Seek_life`)
+
+The data from Farias et al. is split into two data files. In `Farias_demo.csv`, we have the participant ID (`Participant`), their age in year (`Age`), and their religious group (`Religion`: 0 = Atheists, 1 = Christians).
+
+In `Farias_scales.csv`, we then have the participant ID (`Participant`), all six motivation subscales (`motivation_subscale`), and the mean subscale score for each motivation (`mean_score`).
+
 
 ## The 4 Rs
 
-Ivimey-Cook et al. present the 4 Rs behind code review. You might not be able to complete every step for the tasks we covered today, but it will be important for your future work.
+Ivimey-Cook et al. present the 4 Rs behind code review. You might not be able to complete every step for this relatively short task, but it will be important for your future work.
 
 ### Is the code as reported?
 

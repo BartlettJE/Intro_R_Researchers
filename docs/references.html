@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Learning how to use R/RStudio for reproducible data analysis.">
 
-<title>References – Introduction to R for Researchers</title>
+<title>Introduction to R for Researchers - References</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,13 +104,13 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -188,7 +188,7 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
     </div>
 <!-- main -->
@@ -214,6 +214,20 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-alter_vssl_2024" class="csl-entry" role="listitem">
+Alter, U., Dang, C., Kunicki, Z. J., &amp; Counsell, A. (2024). The
+<span>VSSL</span> scale: <span>A</span> brief instructor tool for
+assessing students’ perceived value of software to learning statistics.
+<em>Teaching Statistics</em>, <em>46</em>(3). <a href="https://doi.org/10.1111/test.12374">https://doi.org/10.1111/test.12374</a>
+</div>
+<div id="ref-farias_atheists_2019" class="csl-entry" role="listitem">
+Farias, M., Coleman, T. J., Bartlett, J. E., Oviedo, L., Soares, P.,
+Santos, T., &amp; Bas, M. del C. (2019). Atheists on the
+<span>Santiago</span> <span>Way</span>: <span>Examining</span>
+<span>Motivations</span> to <span>Go</span> <span>On</span>
+<span>Pilgrimage</span>. <em>Sociology of Religion</em>, <em>80</em>(1),
+28–44. <a href="https://doi.org/10.1093/socrel/sry019">https://doi.org/10.1093/socrel/sry019</a>
+</div>
 <div id="ref-ivimey-cook_implementing_2023" class="csl-entry" role="listitem">
 Ivimey-Cook, E. R., Pick, J. L., Bairos-Novak, K. R., Culina, A., Gould,
 E., Grainger, M., Marshall, B. M., Moreau, D., Paquet, M., Royauté, R.,
@@ -221,6 +235,12 @@ Sánchez-Tójar, A., Silva, I., &amp; Windecker, S. M. (2023).
 Implementing code review in the scientific workflow:
 <span>Insights</span> from ecology and evolutionary biology. <em>Journal
 of Evolutionary Biology</em>, <em>36</em>(10), 1347–1356. <a href="https://doi.org/10.1111/jeb.14230">https://doi.org/10.1111/jeb.14230</a>
+</div>
+<div id="ref-lopez_visual_2023" class="csl-entry" role="listitem">
+Lopez, A., Choi, A. K., Dellawar, N. C., Cullen, B. C., Avila Contreras,
+S., Rosenfeld, D. L., &amp; Tomiyama, A. J. (2023). Visual cues and food
+intake: <span>A</span> preregistered replication of <span>Wansink</span>
+et al (2005). <em>Journal of Experimental Psychology: General</em>. <a href="https://doi.org/10.1037/xge0001503.supp">https://doi.org/10.1037/xge0001503.supp</a>
 </div>
 <div id="ref-roth_ten_2025" class="csl-entry" role="listitem">
 Roth, J., Duan, Y., Mahner, F. P., Kaniuth, P., Wallis, T. S. A., &amp;
@@ -646,7 +666,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -678,29 +709,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -708,7 +717,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

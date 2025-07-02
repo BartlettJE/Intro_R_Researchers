@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Learning how to use R/RStudio for reproducible data analysis.">
 
-<title>6&nbsp; Further Resources – Introduction to R for Researchers</title>
+<title>Introduction to R for Researchers - 6&nbsp; Further Resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,13 +86,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06_Resources.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Further Resources</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -215,8 +215,10 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="6.2" class="anchored" data-anchor-id="other-r-resources"><span class="header-section-number">6.2</span> Other R resources</h2>
 <p>Below are a series of other R resources you might find useful to demonstrate it’s utility, from your own research, to how you might use it in your teaching practice.</p>
 <ul>
-<li><p><a href="https://bartlettje.github.io/dissemination_quarto/" target="_blank">Dissemination using Quarto and Github Pages</a>: Once you get the hang of using Quarto, you can use it for different types of dissemination, such as creating websites, books, and presentations. For example, I wrote this book and the Fundamentals of Quantitative Analysis book all within R using Quarto. Combining it with github pages means you can share your work with others and help develop your profile.</p></li>
-<li><p><a href="https://r4ds.hadley.nz/" target="_blank">R for Data Science</a>: This book covers data science by some of the leaders behind Posit and the tidyverse family of packages. You will learn about reproducible workflows, working with text data, and creating functions.</p></li>
+<li><p><a href="https://bartlettje.github.io/dissemination_quarto/" target="_blank">Dissemination using Quarto and Github Pages</a> by me…: Once you get the hang of using Quarto, you can use it for different types of dissemination, such as creating websites, books, and presentations. For example, I wrote this book and the Fundamentals of Quantitative Analysis book all within R using Quarto. Combining it with github pages means you can share your work with others and help develop your profile.</p></li>
+<li><p><a href="https://r4ds.hadley.nz/" target="_blank">R for Data Science</a> by Wickham et al.: This book covers data science by some of the leaders behind Posit and the tidyverse family of packages. You will learn about reproducible workflows, working with text data, and creating functions.</p></li>
+<li><p><a href="https://vis4sds.github.io/vis4sds/" target="_blank">Visualization for Social Data Science</a> by Beecham: This book uses Quarto and <code>ggplot2</code> to demonstrate different visualisation techniques relevant to social sciences, such as networks and model uncertainty.</p></li>
+<li><p><a href="https://socviz.co/" target="_blank">Data Visualisation: A Practical Introduction</a> by Healy: This book uses <code>ggplot2</code> again to create different types of data visualisation such as maps and model uncertainty, in addition to principles of transparent data storytelling.</p></li>
 </ul>
 </section>
 <section id="key-people-to-follow" class="level2" data-number="6.3">
@@ -648,7 +650,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -680,29 +693,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -710,7 +701,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

@@ -10,8 +10,6 @@ By the end of this part, you will be able to:
 
 - Select a range and reorder variables in your data set.
 
-- Arrange values in numerical or alphabetical order.
-
 - Modify or create variables, such as recoding values or creating new groups.
 
 - Filter observations to retain a subset of your data.
