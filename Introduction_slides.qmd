@@ -73,7 +73,7 @@ Image: [Wickham et al. (2023)](https://r4ds.hadley.nz/)
 
 ## Key messages
 
-::: columns
+::::: columns
 ::: {.column .incremental width="50%"}
 -   No one is going to be an expert R user after today; you will learn by doing.
 
@@ -87,7 +87,7 @@ Image: [Wickham et al. (2023)](https://r4ds.hadley.nz/)
 knitr::include_graphics("images/change_stuff.jpg")
 ```
 :::
-:::
+:::::
 
 ## Introduction to R/RStudio
 
@@ -161,18 +161,16 @@ By the end of this part, you will be able to:
 
 ## Code review
 
-Inspired by Ivimey-Cook et al. (2023), we will explore the four Rs: 
+Inspired by Ivimey-Cook et al. (2023), we will explore the four Rs:
 
-::: {.incremental}
+::: incremental
+1.  Is the code as reported?
 
-1. Is the code as reported? 
+2.  Does the code run?
 
-2. Does the code run? 
+3.  Is the code reliable?
 
-3. Is the code reliable? 
-
-4. Are the results reproducible? 
-
+4.  Are the results reproducible?
 :::
 
 ## Independent task and code review
@@ -188,3 +186,11 @@ By the end of this part, you will be able to:
 -   Understand the basic principles of code review for quality control.
 
 -   Conduct a code review of your partner's code.
+
+## Feedback 
+
+To finish, I would really appreciate feedback on the workshop:
+
+<p align="center">
+<img src = "images/intro_R_QR.png" width="500">
+</p>
