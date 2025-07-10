@@ -1,4 +1,8 @@
-# Introduction to R/RStudio
+---
+title: "Introduction to R/RStudio"
+filters:
+  - linkate
+---
 
 In this part, we will explore R and RStudio as two complementary pieces of software. R is the statistical programming language and RStudio is an integrated development environment (IDE) to make it easier to use. If you followed the preparation instructions, you must install R first before RStudio, but you will likely never use R on its own. I will provide a little tour around RStudio and how to use basic functions like writing code, installing packages, and finding documentation.
 
